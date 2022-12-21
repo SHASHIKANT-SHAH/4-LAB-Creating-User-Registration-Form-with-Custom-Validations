@@ -39,7 +39,7 @@ namespace UserRegistrationFormwithValidations.Controllers
         }
 
 
-
+        [ValidateAntiForgeryToken]
         [HttpPost]
         public IActionResult SignUp(SignupViewModel model)
         {
